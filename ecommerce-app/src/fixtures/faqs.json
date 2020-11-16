@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "header": "What is Product Mart?",
+      "body": "Product Mart is a platform for you to find and checkout the product pricing of the latest trending products."
+    },
+    {
+      "id": 2,
+      "header": "Can we buy from Product Mart?",
+      "body": "We are expanding and will soon accept online payment for product delivery!"
+    },
+    {
+      "id": 3,
+      "header": "What products can you find in Product Mart?",
+      "body": "Anything trending is found in Product Mart."
+    },
+    {
+      "id": 4,
+      "header": "How do I cancel?",
+      "body": "Product Mart is very flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account at any time."
+    },
+    {
+      "id": 5,
+      "header": "Can I have multiple profile for Product Mart?",
+      "body": "To prevent security breaches in terms of online purchase in the future, each user credentials is limited to only one profile!!!"
+    }
+  ]

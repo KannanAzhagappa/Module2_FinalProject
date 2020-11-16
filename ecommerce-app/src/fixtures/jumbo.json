@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Enjoy & Search products in all devices",
+      "subTitle": "Search on TVs, Phone, Tablets, PCs, Ipads, Pads, and more.",
+      "image": "/images/misc/Gadgets.png",
+      "alt": "All Gadgets",
+      "direction": "row"
+    },
+    {
+      "id": 2,
+      "title": "Search on the go.",
+      "subTitle": "It is highly responsive and responds well to most common devices.",
+      "image": "/images/misc/Mobile.jpg",
+      "alt": "Search on mobile",
+      "direction": "row-reverse"
+    },
+    {
+      "id": 3,
+      "title": "Search anywhere & everywhere.",
+      "subTitle": "Search all products on your phone, tablet and laptop without paying more.",
+      "image": "/images/misc/anything.jpg",
+      "alt": "Save Money",
+      "direction": "row"
+    }
+  ]
