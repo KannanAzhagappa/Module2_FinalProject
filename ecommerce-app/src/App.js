@@ -4,7 +4,6 @@ import { Home, Browse, SignIn, SignUp, Checkout } from "./pages";
 import * as ROUTES from "./constants/routes";
 import { IsUserRedirect, ProtectedRoute } from "./helpers/routes";
 import { useAuthListener } from "./hooks";
-import "./rawcss-components/axios";
 
 export function App() {
   const { user } = useAuthListener();

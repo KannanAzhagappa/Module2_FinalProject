@@ -2,18 +2,29 @@ import axios from "axios";
 
 const options = {
   method: "GET",
-  url: "https://amazon-product-reviews-keywords.p.rapidapi.com/product/search",
-  params: { keyword: "iphone", category: "aps", country: "US" },
+  url: "https://asos2.p.rapidapi.com/products/v2/list",
+  params: {
+    offset: "0",
+    categoryId: "4209",
+    limit: "12",
+    store: "US",
+    country: "US",
+    currency: "USD",
+    sort: "freshness",
+    lang: "en-US",
+    sizeSchema: "US",
+  },
   headers: {
     "x-rapidapi-key": "c7d6f6a47bmshca722b80ea74b4ap1937fejsn8df2152368e1",
-    "x-rapidapi-host": "amazon-product-reviews-keywords.p.rapidapi.com",
+    "x-rapidapi-host": "asos2.p.rapidapi.com",
   },
 };
 
 axios
   .request(options)
   .then(function (response) {
-    console.log(response.data);
+    console.log(response.data.products);
+    localStorage.setItem("myproduct", JSON.stringify(response.data.products));
   })
   .catch(function (error) {
     console.error(error);
