@@ -7,14 +7,22 @@
     padding: 20px;
     width: 100%;
     min-width: 100px;
-    background-color: white;
     z-index: 1;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    background-color:rgba(107, 105, 105, 0.952);
+    transition: transform 450ms;
+  }
+
+  .product:hover {
+    transform: scale(1.05);
   }
   
   .product__rating {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
+    color: white;
   }
   
   .image__container > img {
@@ -23,6 +31,7 @@
     width: 200px;
     object-fit: contain;
     margin-bottom: 15px;
+    border-radius: 3px;
   }
   
   .product > button {
@@ -36,10 +45,12 @@
   .product__price {
     margin-top: 5px;
     align-items: center;
+    color: white;
   }
   
   .product__info {
     height: 100px;
     margin-bottom: 15px;
     align-items: center;
+    color: white;
   }

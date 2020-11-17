@@ -5,7 +5,14 @@ import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
 
 export default function Checkout() {
-  const [{ basket }] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
+
+  const removeAllFromBasket = () => {
+    dispatch({
+      type: "EMPTY_BASKET",
+    });
+  };
+
   return (
     <>
       <div className="checkout">
@@ -17,7 +24,20 @@ export default function Checkout() {
           />
 
           <div>
-            <h2 className="checkout__title">Your shopping Basket</h2>
+            {basket.length ? (
+              <>
+                <h2 className="checkout__title">Your shopping Basket</h2>
+                <button onClick={removeAllFromBasket}>Clear Basket</button>
+              </>
+            ) : (
+              <>
+                <h2 className="checkout__title">Your shopping Basket</h2>
+                <p className="checkout__subtitle">
+                  Your cart is Empty!!! Please browse and add products to your
+                  cart!!!
+                </p>
+              </>
+            )}
             {basket.map((item) => (
               <CheckoutProduct
                 id={item.id}

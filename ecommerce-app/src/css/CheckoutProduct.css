@@ -2,8 +2,15 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-}
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 450ms;
+    padding-left: 10px;
+  }
 
+.checkoutProduct:hover {
+    transform: scale(1.02);
+  }
+  
 .checkoutProduct__info {
     padding-left: 20px
 }
@@ -20,6 +27,12 @@
     object-fit: contain;
     width: 200x;
     height: 200px;
+    mix-blend-mode: multiply;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
   }
 
 .checkoutProduct__rating {

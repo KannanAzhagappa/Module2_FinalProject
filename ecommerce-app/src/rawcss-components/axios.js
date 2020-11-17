@@ -5,7 +5,7 @@ const options = {
   url: "https://asos2.p.rapidapi.com/products/v2/list",
   params: {
     offset: "0",
-    categoryId: "4209",
+    categoryId: "1935",
     limit: "12",
     store: "US",
     country: "US",
@@ -23,8 +23,7 @@ const options = {
 axios
   .request(options)
   .then(function (response) {
-    console.log(response.data.products);
-    localStorage.setItem("myproduct", JSON.stringify(response.data.products));
+    console.log(response.data);
   })
   .catch(function (error) {
     console.error(error);
