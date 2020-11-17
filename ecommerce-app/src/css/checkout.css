@@ -21,7 +21,7 @@
     padding-left: 20px;
   }
 
-button {
+.cart__container > button {
     background: #f0c14b;
     border: 1px solid;
     margin-top: 10px;

@@ -23,7 +23,7 @@ export default function Checkout() {
             alt=""
           />
 
-          <div>
+          <div className="cart__container">
             {basket.length ? (
               <>
                 <h2 className="checkout__title">Your shopping Basket</h2>
