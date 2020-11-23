@@ -23,7 +23,7 @@ const options = {
 axios
   .request(options)
   .then(function (response) {
-    console.log(response.data);
+    localStorage.setItem("myproduct", JSON.stringify(response.data.products));
   })
   .catch(function (error) {
     console.error(error);

@@ -7,11 +7,28 @@ import { useStateValue } from "./StateProvider";
 
 export default function Top() {
   const [{ basket }] = useStateValue();
+  var searchterm;
+
+  const handleclick = (e) => {
+    searchterm = e.target.value;
+    var products = JSON.parse(localStorage.getItem("myproduct"));
+    console.log(products);
+    var filteredproducts = products.filter(function (element) {
+      return element.name.includes(searchterm);
+    });
+    console.log(filteredproducts);
+    localStorage.setItem("myfilteredproduct", JSON.stringify(filteredproducts));
+  };
 
   return (
     <div className="header">
-      <div className="header__search">
-        <input className="header__searchInput" type="text" />
+      <div id="searchterm" className="header__search">
+        <input
+          className="header__searchInput"
+          placeholder="Enter Search here!"
+          type="text"
+          onChange={handleclick}
+        />
         <SearchIcon className="header__searchIcon" />
       </div>
 

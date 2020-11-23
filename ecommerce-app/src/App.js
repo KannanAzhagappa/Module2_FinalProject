@@ -12,8 +12,8 @@ export function App() {
   return (
     <Media
       queries={{
-        small: "(max-width: 430px)",
-        acceptable: "(min-width: 431px)",
+        small: "(max-width: 450px)",
+        acceptable: "(min-width: 451px)",
       }}
     >
       {(matches) => (

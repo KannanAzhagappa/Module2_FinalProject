@@ -1,18 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,600&display=swap');
+
 .checkoutProduct {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(61, 61, 61, 0.9), inset 0 0 5px rgba(245, 240, 240, 0.959);
     transition: transform 450ms;
     padding-left: 10px;
+    font-family: 'Spectral', serif;
+    padding: 5px;
   }
 
 .checkoutProduct:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
   
 .checkoutProduct__info {
-    padding-left: 20px
+    padding-left: 20px;
+    color: salmon;
+    font-weight: bold; 
 }
 
 .checkoutProduct__info > button {
@@ -21,15 +27,20 @@
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-shadow: 0 0 5px rgba(61, 61, 61, 0.5);
+}
+
+.checkoutProduct__info > button:hover {
+  cursor: pointer;
 }
 
 .checkoutProduct__image {
     object-fit: contain;
     width: 200x;
     height: 200px;
-    mix-blend-mode: multiply;
     border-radius: 3px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(61, 61, 61, 0.5), inset 0 0 5px rgba(245, 240, 240, 0.959);
     align-items: center;
     padding: 10px;
     margin: 10px;

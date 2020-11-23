@@ -1,23 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
 .product {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    margin: 10px;
     padding: 20px;
-    width: 100%;
-    min-width: 100px;
-    z-index: 1;
+    height: 450px;
+    max-width: 350px;
+    min-width: 250px;
+    margin: 5px;
+    margin-bottom: 25px;
     border-radius: 3px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     background-color:rgba(107, 105, 105, 0.952);
     transition: transform 450ms;
+    font-family: 'Rubik', sans-serif;
+    box-shadow:none;
+    flex: 30%;
   }
 
-  .product:hover {
-    transform: scale(1.05);
+  .product:hover, .product:active {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(255, 216, 216), inset 0 0 60px rgb(255, 216, 216);
   }
-  
+
   .product__rating {
     display: flex;
     margin-bottom: 10px;
@@ -27,19 +34,21 @@
   
   .image__container > img {
     margin-top: 10px;
-    height: 200px;
     width: 200px;
     object-fit: contain;
     margin-bottom: 15px;
-    border-radius: 3px;
+    border-radius: 10px;
   }
   
-  .product > button {
+  .right > button {
     background: #f0c14b;
     border: 1px solid;
-    margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+  }
+
+  .right > button:hover {
+    cursor: pointer;
   }
   
   .product__price {
@@ -50,7 +59,76 @@
   
   .product__info {
     height: 100px;
+    margin-top: 10px;
     margin-bottom: 15px;
     align-items: center;
     color: white;
+  }
+
+  .control__holder {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  .view:hover {
+    color: white;
+    cursor: pointer;
+  }
+
+  .ribbon1 {
+    position: absolute;
+    top: -6.1px;
+    right: 10px;
+  }
+  .ribbon1:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 53px solid transparent;
+    border-right: 53px solid transparent;
+    border-top: 10px solid #F8463F;
+  }
+  .ribbon1 span {
+    position: relative;
+    display: block;
+    text-align: center;
+    background: #F8463F;
+    font-size: 14px;
+    line-height: 1;
+    padding: 12px 8px 10px;
+    border-top-right-radius: 8px;
+    width: 90px;
+  }
+  .ribbon1 span:before, .ribbon1 span:after {
+    position: absolute;
+    content: "";
+  }
+  .ribbon1 span:before {
+   height: 6px;
+   width: 6px;
+   left: -6px;
+   top: 0;
+   background: #F8463F;
+  }
+  .ribbon1 span:after {
+   height: 6px;
+   width: 8px;
+   left: -8px;
+   top: 0;
+   border-radius: 8px 8px 0 0;
+   background: #F8463F;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .left {
+    position: absolute;
+    left: 35px;
+  }
+
+  .right {
+    position: absolute;
+    right: 35px;
   }
