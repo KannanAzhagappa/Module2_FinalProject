@@ -43,11 +43,18 @@
     color: white;
   }
   
-  .header__basketCount {
+  .header__Count {
     margin-left: 10px;
     margin-right: 10px;
   }
-  
+
+  .header__optionImage {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+  }
+
   .header__nav {
     display: flex;
     justify-content: space-evenly;

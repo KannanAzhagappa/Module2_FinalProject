@@ -1,70 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,600&display=swap");
 
 .modal__container {
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 120;
-    margin: 60px auto;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 20px 200px rgb(75, 75, 75), inset 0 0 10px rgba(75, 75, 75,0.2);
-    border-radius: 10px;
-    padding: 50px;
-    top: 0;
-    left: 0;
-    margin: auto;
-    right: 0;
-    bottom: 0;
-    width: 450px;
-    height: 450px;
-    font-family: 'Spectral', serif;
-    font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 120;
+  margin: 60px auto;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 20px 200px rgb(75, 75, 75), inset 0 0 10px rgba(75, 75, 75, 0.2);
+  border-radius: 10px;
+  padding: 50px;
+  top: 0;
+  left: 0;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  width: 450px;
+  height: 450px;
+  font-family: "Spectral", serif;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 600px) {
   .modal__container {
     width: 300px;
     height: 350px;
-}
+  }
 }
 
 .modal__content img {
-    border-radius: 5px;
-    display: block;
-    box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 450ms;
-  }
+  border-radius: 5px;
+  display: block;
+  box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 450ms;
+}
 
-  .modal__content img:hover {
-    transform: scale(1.05);
-  }
+.modal__content img:hover {
+  transform: scale(1.05);
+}
 
-  .modal__para{
-    font-weight:bold;
-  }
+.modal__para {
+  font-weight: bold;
+}
 
-  .modal__para span {
-      color:firebrick;
-      padding-right: 5px;
-      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-  }
+.modal__para span {
+  color: firebrick;
+  padding-right: 5px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
 
-  .close__modal {
-    position:absolute;
-    top:10px;
-    right:10px;
-    transition: transform 450ms;
-  }
+.close__modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
-  .close__modal:hover {
-    cursor: pointer;
-    font-size: 1.1em;
-  }
+.close__modal:hover {
+  cursor: pointer;
+  font-size: 1.1em;
+}

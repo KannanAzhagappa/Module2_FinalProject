@@ -3,3 +3,4 @@ export { default as Browse } from "./browse";
 export { default as SignIn } from "./signin";
 export { default as SignUp } from "./signup";
 export { default as Checkout } from "./checkout";
+export { default as Gallery } from "./gallery";

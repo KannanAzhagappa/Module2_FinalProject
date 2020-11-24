@@ -40,9 +40,10 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.p`
-  font-size: 13px;
+  font-size: 16px;
   color: #757575;
   margin-bottom: 40px;
+  font-weight: bold;
 `;
 
 export const Break = styled.div`

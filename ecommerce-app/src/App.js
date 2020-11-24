@@ -1,6 +1,6 @@
 import { React, Fragment } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import { Home, Browse, SignIn, SignUp, Checkout } from "./pages";
+import { Home, Browse, SignIn, SignUp, Checkout, Gallery } from "./pages";
 import * as ROUTES from "./constants/routes";
 import { IsUserRedirect, ProtectedRoute } from "./helpers/routes";
 import { useAuthListener } from "./hooks";
@@ -46,6 +46,9 @@ export function App() {
                 </ProtectedRoute>
                 <ProtectedRoute user={user} path={ROUTES.CHECKOUT}>
                   <Checkout />
+                </ProtectedRoute>
+                <ProtectedRoute user={user} path={ROUTES.GALLERY}>
+                  <Gallery />
                 </ProtectedRoute>
                 <IsUserRedirect
                   user={user}

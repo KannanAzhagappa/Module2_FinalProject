@@ -37,7 +37,9 @@ export function FooterContainer() {
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />
-      <Footer.Text>Product Mart Singapore</Footer.Text>
+      <Footer.Text>
+        &#169; Product Mart Singapore ~ By Kannan Azhagappa
+      </Footer.Text>
     </Footer>
   );
 }

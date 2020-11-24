@@ -1,134 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
 
 .product {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    height: 450px;
-    max-width: 350px;
-    min-width: 250px;
-    margin: 5px;
-    margin-bottom: 25px;
-    border-radius: 3px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    background-color:rgba(107, 105, 105, 0.952);
-    transition: transform 450ms;
-    font-family: 'Rubik', sans-serif;
-    box-shadow:none;
-    flex: 30%;
-  }
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 450px;
+  max-width: 350px;
+  min-width: 250px;
+  margin: 5px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(107, 105, 105, 0.952);
+  transition: transform 450ms;
+  font-family: "Rubik", sans-serif;
+  box-shadow: none;
+  flex: 30%;
+}
 
-  .product:hover, .product:active {
-    cursor: pointer;
-    box-shadow: 0 0 20px rgb(255, 216, 216), inset 0 0 60px rgb(255, 216, 216);
-  }
+.product:hover,
+.product:active {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgb(255, 216, 216), inset 0 0 60px rgb(255, 216, 216);
+}
 
-  .product__rating {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
-    color: white;
-  }
-  
-  .image__container > img {
-    margin-top: 10px;
-    width: 200px;
-    object-fit: contain;
-    margin-bottom: 15px;
-    border-radius: 10px;
-  }
-  
-  .right > button {
-    background: #f0c14b;
-    border: 1px solid;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
-  }
+.product__rating {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  color: white;
+}
 
-  .right > button:hover {
-    cursor: pointer;
-  }
-  
-  .product__price {
-    margin-top: 5px;
-    align-items: center;
-    color: white;
-  }
-  
-  .product__info {
-    height: 100px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    align-items: center;
-    color: white;
-  }
+.image__container > img {
+  margin-top: 10px;
+  width: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
 
-  .control__holder {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+.right > button {
+  background: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
 
-  .view:hover {
-    color: white;
-    cursor: pointer;
-  }
+.right > button:hover {
+  cursor: pointer;
+}
 
-  .ribbon1 {
-    position: absolute;
-    top: -6.1px;
-    right: 10px;
-  }
-  .ribbon1:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 53px solid transparent;
-    border-right: 53px solid transparent;
-    border-top: 10px solid #F8463F;
-  }
-  .ribbon1 span {
-    position: relative;
-    display: block;
-    text-align: center;
-    background: #F8463F;
-    font-size: 14px;
-    line-height: 1;
-    padding: 12px 8px 10px;
-    border-top-right-radius: 8px;
-    width: 90px;
-  }
-  .ribbon1 span:before, .ribbon1 span:after {
-    position: absolute;
-    content: "";
-  }
-  .ribbon1 span:before {
-   height: 6px;
-   width: 6px;
-   left: -6px;
-   top: 0;
-   background: #F8463F;
-  }
-  .ribbon1 span:after {
-   height: 6px;
-   width: 8px;
-   left: -8px;
-   top: 0;
-   border-radius: 8px 8px 0 0;
-   background: #F8463F;
-  }
+.product__price {
+  margin-top: 5px;
+  align-items: center;
+  color: white;
+}
 
-  .hidden {
-    display: none;
-  }
+.product__info {
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+  color: white;
+}
 
-  .left {
-    position: absolute;
-    left: 35px;
-  }
+.control__holder {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
-  .right {
-    position: absolute;
-    right: 35px;
-  }
+.view:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.ribbon1 {
+  position: absolute;
+  top: -6.1px;
+  right: 10px;
+}
+
+.ribbon1:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 53px solid transparent;
+  border-right: 53px solid transparent;
+  border-top: 10px solid #f8463f;
+}
+
+.ribbon1 span {
+  position: relative;
+  display: block;
+  text-align: center;
+  background: #f8463f;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12px 8px 10px;
+  border-top-right-radius: 8px;
+  width: 90px;
+}
+
+.ribbon1 span:before,
+.ribbon1 span:after {
+  position: absolute;
+  content: "";
+}
+
+.ribbon1 span:before {
+  height: 6px;
+  width: 6px;
+  left: -6px;
+  top: 0;
+  background: #f8463f;
+}
+
+.ribbon1 span:after {
+  height: 6px;
+  width: 8px;
+  left: -8px;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background: #f8463f;
+}
+
+.hidden {
+  display: none;
+}
+
+.left {
+  position: absolute;
+  left: 35px;
+}
+
+.right {
+  position: absolute;
+  right: 35px;
+}
