@@ -62,6 +62,12 @@ label:hover {
     height: 0;
     padding: 40% 0;
     position: relative;
+    transition: transform 450ms;
+}
+
+.img-wrap:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .img-wrap img {
