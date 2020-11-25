@@ -15,7 +15,6 @@ export default function Productcontainer() {
     if (myfilteredproduct) {
       setProduct(myfilteredproduct);
     } else {
-      localStorage.removeItem("myfilteredproduct");
       setProduct(myproduct);
     }
   };
